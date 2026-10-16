@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandi Muhamad Fauzi | Web Developer Portfolio</title>
+    <meta name="description"
+        content="Portofolio resmi Yandi Muhamad Fauzi - Mahasiswa Teknik Informatika & Web Developer dengan passion merancang website dan aplikasi modern berkinerja tinggi.">
+    <meta name="keywords"
+        content="Yandi Muhamad Fauzi, YandiDev, Web Developer, Informatics, Kuningan University, Portfolio, PHP, Laravel, Kotlin, Frontend, Fullstack">
+    <meta name="author" content="Yandi Muhamad Fauzi">
+    <meta name="theme-color" content="#121212">
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yandimuhamadfauzi.github.io/">
+    <meta property="og:title" content="Yandi Muhamad Fauzi | Web & Mobile Developer">
+    <meta property="og:description"
+        content="Portofolio resmi Yandi Muhamad Fauzi - Mahasiswa Teknik Informatika & Web Developer dengan passion merancang website dan aplikasi modern berkinerja tinggi.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:site_name" content="YandiDev Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yandi Muhamad Fauzi | Web & Mobile Developer">
+    <meta name="twitter:description"
+        content="Portofolio resmi Yandi Muhamad Fauzi - Mahasiswa Teknik Informatika & Web Developer dengan passion merancang website dan aplikasi modern berkinerja tinggi.">
+    <meta name="twitter:image" content="img/logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css?v=2.3">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="apple-touch-icon" href="img/logo.png">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+
+    <!-- Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="YandiDev Logo" class="nav-logo">
+                <span>Yandi<span>Dev.</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#guestbook">Guestbook</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="ph ph-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="ph ph-list"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content fade-in">
+                <div class="badge-wrapper">
+                    <span class="badge"><span class="pulse-dot"></span> Welcome</span>
+                </div>
+                <h1>Hi, I'm <br><span class="gradient-text">Yandi Muhamad Fauzi</span></h1>
+
+                <!-- Typing Effect Subtitle -->
+                <p class="subtitle">
+                    I am <span id="typing-text" class="gradient-text"></span><span class="typing-cursor"></span>
+                </p>
+
+                <p class="description">
+                    I have a great passion for designing and building aesthetically pleasing interactive applications.
+                    Currently, I am also actively honing my organizational skills at UKM PBK (Paguyuban Barudak
+                    Komputer).
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class="ph-bold ph-arrow-right"></i>
+                    </a>
+                    <!-- New Download CV Button -->
+                    <a href="CV_Yandi.pdf" download id="download-cv-btn" class="btn btn-secondary">
+                        <i class="ph-bold ph-download-simple"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Mini Counter / Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-symbol">+</span>
+                        </div>
+                        <p class="stat-label">Years Learning</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-symbol">+</span>
+                        </div>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-header">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-symbol">%</span>
+                        </div>
+                        <p class="stat-label">Dedication</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in-delayed">
+                <div class="image-wrapper">
+                    <div class="glow-ring"></div>
+                    <img src="img/profile.jpg" alt="Foto Yandi Muhamad Fauzi"
+                        onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop';">
+                    <div class="profile-brand-pill">
+                        <img src="img/logo.png" alt="YandiDev Logo">
+                        <span>YandiDev</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-header slide-up">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content glass-panel slide-up">
+                <div class="about-text">
+                    <p>My name is Yandi Muhamad Fauzi. As an Informatics Engineering student at Kuningan University, I
+                        am highly enthusiastic about web and mobile app development. My focus is on creating digital
+                        solutions that not only function well but also provide an exceptional user experience. Besides
+                        coding, I also actively develop myself through student organization activities.</p>
+
+                    <h3 class="skills-title">Tech Stack & Tools</h3>
+
+                    <div class="skills-categories">
+                        <!-- Category 1: Languages -->
+                        <div class="skills-category-block">
+                            <h4 class="category-heading"><i class="ph-bold ph-code"></i> Languages</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag"><i class="ph-bold ph-brackets-curly"></i> <span>TypeScript</span>
+                                </div>
+                                <div class="skill-tag"><i class="ph-bold ph-file-js"></i> <span>JavaScript</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-file-code"></i> <span>PHP</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-device-mobile"></i> <span>Kotlin</span>
+                                </div>
+                                <div class="skill-tag"><i class="ph-bold ph-file-html"></i> <span>HTML5</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-file-css"></i> <span>CSS3</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Category 2: Frameworks & Runtimes -->
+                        <div class="skills-category-block">
+                            <h4 class="category-heading"><i class="ph-bold ph-stack"></i> Frameworks & Runtimes</h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag"><i class="ph-bold ph-globe"></i> <span>Next.js</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-tree-structure"></i> <span>Node.js</span>
+                                </div>
+                                <div class="skill-tag"><i class="ph-bold ph-atom"></i> <span>React.js</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-paint-brush"></i> <span>Tailwind CSS</span>
+                                </div>
+                                <div class="skill-tag"><i class="ph-bold ph-fire"></i> <span>Laravel</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Category 3: Databases & Ecosystem -->
+                        <div class="skills-category-block">
+                            <h4 class="category-heading"><i class="ph-bold ph-hard-drives"></i> Databases & Ecosystem
+                            </h4>
+                            <div class="skills-grid">
+                                <div class="skill-tag"><i class="ph-bold ph-database"></i> <span>MySQL</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-cylinder"></i> <span>Supabase</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-git-branch"></i> <span>Git</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-github-logo"></i> <span>GitHub</span></div>
+                                <div class="skill-tag"><i class="ph-bold ph-terminal-window"></i> <span>VS Code</span>
+                                </div>
+                                <div class="skill-tag"><i class="ph-bold ph-figma-logo"></i> <span>Figma</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Organizations Section (Slide Showcase) -->
+        <section id="experience" class="edu-org-section">
+            <div class="section-header slide-up">
+                <span class="section-pill"><i class="ph-bold ph-graduation-cap"></i> Milestones</span>
+                <h2>Education & <span class="gradient-text">Organizations</span></h2>
+                <p class="section-desc">Academic milestones and organizational contributions shaping my software
+                    engineering journey.</p>
+                <div class="header-line"></div>
+            </div>
+
+            <!-- Slide Controls: Filter Tabs + Navigation Arrows -->
+            <div class="slide-controls-wrapper slide-up">
+                <div class="filter-tabs" id="edu-filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All <span class="tab-badge">3</span></button>
+                    <button class="filter-tab" data-filter="education"><i class="ph-bold ph-student"></i> Education
+                        <span class="tab-badge">2</span></button>
+                    <button class="filter-tab" data-filter="organization"><i class="ph-bold ph-users-three"></i>
+                        Organization <span class="tab-badge">1</span></button>
+                </div>
+
+                <div class="slider-arrows">
+                    <button class="slider-arrow prev" id="edu-slide-prev" aria-label="Previous Slide" disabled>
+                        <i class="ph-bold ph-caret-left"></i>
+                    </button>
+                    <button class="slider-arrow next" id="edu-slide-next" aria-label="Next Slide">
+                        <i class="ph-bold ph-caret-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide Carousel Container -->
+            <div class="edu-slider-container slide-up">
+                <div class="edu-slider-track" id="edu-slider-track">
+
+                    <!-- Card 1: Universitas Kuningan -->
+                    <div class="edu-card glass-panel" data-category="education">
+                        <div class="card-glow"></div>
+                        <div class="card-top-bar">
+                            <div class="category-tag education">
+                                <i class="ph-bold ph-graduation-cap"></i> Education
+                            </div>
+                            <span class="status-badge active-status">
+                                <span class="pulse-dot"></span> Active Student
+                            </span>
+                        </div>
+
+                        <div class="card-hero-info">
+                            <div class="institution-icon">
+                                <i class="ph-bold ph-buildings"></i>
+                            </div>
+                            <div class="institution-meta">
+                                <h3 class="card-institution">Kuningan University</h3>
+                                <p class="card-subtitle">Faculty of Computer Science &bull; Kuningan, ID</p>
+                            </div>
+                        </div>
+
+                        <div class="card-role-row">
+                            <span class="card-role">Bachelor of Informatics Engineering</span>
+                            <span class="card-period"><i class="ph-bold ph-calendar-blank"></i> 2024 — Present</span>
+                        </div>
+
+                        <ul class="card-bullet-points">
+                            <li>Focusing on software engineering, modern web development, and industry-standard mobile
+                                app programming.</li>
+                            <li>Studying algorithm analysis, data structures, relational databases, and system
+                                architecture.</li>
+                            <li>Actively building independent web and mobile application portfolio projects.</li>
+                        </ul>
+
+                        <div class="card-stack-tags">
+                            <span class="stack-chip">Software Engineering</span>
+                            <span class="stack-chip">Web Development</span>
+                            <span class="stack-chip">Mobile App</span>
+                            <span class="stack-chip">Algorithms</span>
+                            <span class="stack-chip">Database</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: UKM PBK -->
+                    <div class="edu-card glass-panel" data-category="organization">
+                        <div class="card-glow"></div>
+                        <div class="card-top-bar">
+                            <div class="category-tag organization">
+                                <i class="ph-bold ph-users-three"></i> Organization
+                            </div>
+                            <span class="status-badge active-status">
+                                <span class="pulse-dot"></span> Active Member
+                            </span>
+                        </div>
+
+                        <div class="card-hero-info">
+                            <div class="institution-icon org-icon">
+                                <i class="ph-bold ph-code"></i>
+                            </div>
+                            <div class="institution-meta">
+                                <h3 class="card-institution">UKM PBK</h3>
+                                <p class="card-subtitle">Computer Student Association &bull; UNIKU Campus</p>
+                            </div>
+                        </div>
+
+                        <div class="card-role-row">
+                            <span class="card-role">Active Member & Technology Division</span>
+                            <span class="card-period"><i class="ph-bold ph-calendar-blank"></i> 2024 — Present</span>
+                        </div>
+
+                        <ul class="card-bullet-points">
+                            <li>Actively involved in tech research forums and campus internal programming workshops.
+                            </li>
+                            <li>Cultivating leadership, public speaking, team collaboration, and tech event management.
+                            </li>
+                            <li>Routinely collaborating and sharing insights on modern web stacks and emerging IT
+                                trends.</li>
+                        </ul>
+
+                        <div class="card-stack-tags">
+                            <span class="stack-chip">Team Leadership</span>
+                            <span class="stack-chip">Tech Workshops</span>
+                            <span class="stack-chip">Public Speaking</span>
+                            <span class="stack-chip">Collaborative Dev</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: SMAN 1 Bantarujeg -->
+                    <div class="edu-card glass-panel" data-category="education">
+                        <div class="card-glow"></div>
+                        <div class="card-top-bar">
+                            <div class="category-tag education">
+                                <i class="ph-bold ph-book-open-text"></i> Education
+                            </div>
+                            <span class="status-badge completed-status">
+                                <i class="ph-bold ph-check-circle"></i> Completed
+                            </span>
+                        </div>
+
+                        <div class="card-hero-info">
+                            <div class="institution-icon">
+                                <i class="ph-bold ph-student"></i>
+                            </div>
+                            <div class="institution-meta">
+                                <h3 class="card-institution">SMAN 1 Bantarujeg</h3>
+                                <p class="card-subtitle">Senior High School &bull; Majalengka, ID</p>
+                            </div>
+                        </div>
+
+                        <div class="card-role-row">
+                            <span class="card-role">Social Sciences Major (IPS)</span>
+                            <span class="card-period"><i class="ph-bold ph-calendar-blank"></i> 2021 — 2024</span>
+                        </div>
+
+                        <ul class="card-bullet-points">
+                            <li>Graduated with a concentration in Social Sciences (IPS), developing strong critical
+                                thinking, social analysis, and communication skills.</li>
+                            <li>Discovered a strong passion for information technology and began self-taught
+                                fundamentals of computer programming.</li>
+                        </ul>
+
+                        <div class="card-stack-tags">
+                            <span class="stack-chip">Social Sciences</span>
+                            <span class="stack-chip">Critical Thinking</span>
+                            <span class="stack-chip">Self-taught Coding</span>
+                            <span class="stack-chip">Computer Basics</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slide Pagination Dots -->
+                <div class="slider-dots" id="edu-slider-dots">
+                    <button class="dot-btn active" data-index="0" aria-label="Slide 1"></button>
+                    <button class="dot-btn" data-index="1" aria-label="Slide 2"></button>
+                    <button class="dot-btn" data-index="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header slide-up">
+                <h2>Recent <span class="gradient-text">Projects</span></h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel slide-up">
+                    <div class="project-image">
+                        <div class="overlay"></div>
+                        <img src="img/tandur.png" alt="Tandur App">
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Mobile App</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tandur App</h3>
+                        <p>An interactive encyclopedia mobile app specifically designed to educate and assist users in
+                            caring for plants.</p>
+                        <a href="#" class="project-link open-modal" data-title="Tandur App" data-image="img/tandur.png"
+                            data-desc="An interactive encyclopedia mobile app specifically designed to educate and assist users in caring for various types of plants. Its main features include plant search, routine care tips, and pest control guides. Built using Kotlin to provide a smooth and optimal Android performance."
+                            data-tags="Kotlin, Mobile App, Android" data-github="https://github.com/yandimuhamadfauzi/Tandur"
+                            data-link="#">View Details <i class="ph-bold ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel slide-up">
+                    <div class="project-image">
+                        <div class="overlay"></div>
+                        <img src="img/barbershop.png" alt="Sistem Antrian Barbershop">
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Barbershop Queue</h3>
+                        <p>A website platform to digitize customer queue management at Dipolka Barbershop, providing
+                            convenience for both customers and owners.</p>
+                        <a href="#" class="project-link open-modal" data-title="Barbershop Queue System"
+                            data-image="img/barbershop.png"
+                            data-desc="A website platform to digitize customer queue management at Dipolka Barbershop. This website makes it easy for customers to take a queue number and check the estimated waiting time online. On the owner's side, this system helps manage haircut history and employee performance efficiently."
+                            data-tags="PHP, Laravel, Web" data-github="https://github.com/yandimuhamadfauzi/BarbershopDipolkaLaravel"
+                            data-link="#">View Details <i class="ph-bold ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel slide-up">
+                    <div class="project-image">
+                        <div class="overlay"></div>
+                        <img src="img/financeapp.png" alt="Finance App">
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Finance App</h3>
+                        <p>A personal finance & expense tracking mobile app designed to help users record daily transactions and analyze financial health.</p>
+                        <a href="#" class="project-link open-modal" data-title="Finance App"
+                            data-image="img/financeapp.png"
+                            data-desc="An intuitive mobile application developed with Kotlin to streamline personal financial management. Key features include daily income & expense tracking, interactive visual budget statistics with donut charts, transaction categorization, and financial history reports. Built to deliver a fast, responsive, and seamless Android user experience."
+                            data-tags="Kotlin, Android, Mobile App"
+                            data-github="https://github.com/yandimuhamadfauzi/FinanceApp"
+                            data-link="#">View Details <i class="ph-bold ph-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook Section -->
+        <section id="guestbook" class="guestbook">
+            <div class="section-header slide-up">
+                <h2>Guest <span class="gradient-text">Book</span></h2>
+                <div class="header-line"></div>
+                <p class="section-subtitle">Leave a greeting, thoughts, or warm message here!</p>
+            </div>
+
+            <div class="guestbook-container">
+                <!-- Guestbook Form Card -->
+                <div class="guestbook-form-card glass-panel slide-up">
+                    <div class="card-badge">
+                        <i class="ph-bold ph-pencil-simple-line"></i> Sign Guestbook
+                    </div>
+                    <h3>Say Hello to Yandi</h3>
+                    <p class="card-desc">Your feedback, thoughts, or kind words mean a lot to the growth of this
+                        portfolio.</p>
+
+                    <form id="guestbook-form">
+                        <div class="form-group">
+                            <label for="gb-name">Your Name / Nickname</label>
+                            <input type="text" id="gb-name" placeholder="" required
+                                maxlength="40">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Choose Avatar / Emoji</label>
+                            <div class="avatar-picker" id="avatar-picker">
+                                <button type="button" class="avatar-opt active" data-emoji="🚀">🚀</button>
+                                <button type="button" class="avatar-opt" data-emoji="💻">💻</button>
+                                <button type="button" class="avatar-opt" data-emoji="☕">☕</button>
+                                <button type="button" class="avatar-opt" data-emoji="🔥">🔥</button>
+                                <button type="button" class="avatar-opt" data-emoji="✨">✨</button>
+                                <button type="button" class="avatar-opt" data-emoji="🌟">🌟</button>
+                                <button type="button" class="avatar-opt" data-emoji="👾">👾</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gb-message">Your Message</label>
+                            <textarea id="gb-message" rows="3" placeholder=""
+                                required maxlength="250"></textarea>
+                        </div>
+
+                        <button type="submit" id="gb-submit-btn" class="btn btn-primary w-100"
+                            style="width: 100%; border: none;">
+                            <span>Post Message</span> <i class="ph-bold ph-paper-plane-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Guestbook Feed Card -->
+                <div class="guestbook-feed-card glass-panel slide-up">
+                    <div class="feed-header">
+                        <div class="feed-title-wrapper">
+                            <h3>Visitor Messages</h3>
+                            <span class="badge-count" id="gb-count">0</span>
+                        </div>
+                        <span class="live-status"><span class="pulse-dot"></span> Live Feed</span>
+                    </div>
+
+                    <div class="guestbook-list" id="guestbook-list">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-header slide-up">
+                <h2>Let's Connect <span class="gradient-text">Together</span></h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Left Info Section -->
+                <div class="contact-info glass-panel slide-up">
+                    <div class="contact-glow"></div>
+                    <h3>Have a Dream Project?</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">Don't hesitate to
+                        contact me for collaboration, job offers, or just to discuss technology. I'm always open to new
+                        opportunities!</p>
+
+                    <div class="social-wrapper" style="margin-top: auto;">
+                        <p class="social-text">Follow my social media:</p>
+                        <div class="social-links" style="justify-content: flex-start;">
+                            <a href="https://github.com/yandimuhamadfauzi" target="_blank" aria-label="GitHub"
+                                class="social-icon">
+                                <i class="ph-fill ph-github-logo"></i>
+                            </a>
+                            <a href="https://instagram.com/yandimfauzi" target="_blank" aria-label="Instagram"
+                                class="social-icon">
+                                <i class="ph-fill ph-instagram-logo"></i>
+                            </a>
+                            <a href="https://tiktok.com/@yanzfauzi" target="_blank" aria-label="TikTok"
+                                class="social-icon">
+                                <i class="ph-fill ph-tiktok-logo"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Section -->
+                <div class="contact-form glass-panel slide-up">
+                    <form id="contact-form">
+
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" name="name" placeholder="" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder=""
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="4"
+                                placeholder="" required></textarea>
+                        </div>
+                        <button type="submit" id="contact-submit-btn" class="btn btn-primary w-100"
+                            style="width: 100%; border: none;">
+                            <span>Send Message</span> <i class="ph-bold ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img/logo.png" alt="YandiDev Logo" class="footer-logo">
+                <span>Yandi<span>Dev.</span></span>
+            </div>
+            <p>&copy; 2026 Yandi Muhamad Fauzi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal"><i class="ph-bold ph-x"></i></span>
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img id="modalImage" src="" alt="Project Image">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle">Project Title</h3>
+                    <div class="modal-tags" id="modalTags">
+                        <!-- Tags injected by JS -->
+                    </div>
+                    <p id="modalDesc">Project description goes here...</p>
+                    <div class="modal-actions">
+                        <a href="https://github.com/yandimuhamadfauzi/Tandur" id="modalGithubLink" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                            <i class="ph-fill ph-github-logo"></i> <span>Source Code</span>
+                        </a>
+                        <a href="" id="modalLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: none;">
+                            <i class="ph-bold ph-arrow-square-out"></i> <span>Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="ph-bold ph-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="ph-fill ph-check-circle"></i>
+        <span id="toast-message">CV Yandi berhasil diunduh!</span>
+    </div>
+
+    <script src="script.js?v=2.4"></script>
+</body>
+
+</html>
